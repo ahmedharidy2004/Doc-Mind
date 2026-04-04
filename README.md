@@ -22,8 +22,9 @@ python bridge_rag.py
 ## Output
 - Top 2 relevant chunks
 - Final answer with source
-ذ
-ذ
+
+## Structure
+```
 rag-bridge-system/
 │
 ├── data/
@@ -43,3 +44,4 @@ rag-bridge-system/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
