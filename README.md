@@ -8,7 +8,7 @@ A simple Retrieval-Augmented Generation (RAG) pipeline using:
 - Ollama (Llama3/Mistral)
 
 ## Pipeline
-Load → Chunk → Embed → Store → Retrieve → Generate
+![Header](rag_pipeline.png)
 
 ## Setup
 pip install -r requirements.txt
