@@ -1,7 +1,27 @@
-The os module in Python provides a way of using operating system dependent functionality. It allows you to interface with the underlying operating system that Python is running on. You can use it to perform tasks such as navigating the file system, reading and writing files, and managing processes. The module abstracts away platform-specific details, meaning the same Python code can run on Windows, Linux, and macOS without modification. It is part of Python's standard library, so no installation is required. Importing it is as simple as writing import os at the top of your script.
+Cairo University Faculty of Engineering was established in 1905, making it one of the oldest engineering faculties in Egypt and the Arab world.
 
-To initialize a directory using the os module, you can use os.makedirs() to create a directory and all its parents if they do not exist. The function takes a path as its argument and an optional mode parameter that sets the permissions of the created directory. If the directory already exists, setting the exist_ok parameter to True prevents a FileExistsError from being raised. This is particularly useful in scripts that run repeatedly, where you want to ensure a folder is present without checking manually each time. You can also use os.mkdir() for creating a single directory, but unlike os.makedirs(), it will fail if any parent directory in the path is missing.
+The faculty is located in Giza, on the main campus of Cairo University along the Nile.
 
-The os.path submodule provides useful functions for file path manipulation across different platforms. You can use os.path.join() to construct file paths in a platform-independent way by automatically using the correct separator for the operating system. The function os.path.exists() checks whether a given path points to an existing file or directory, while os.path.isfile() and os.path.isdir() let you distinguish between the two. Additionally, os.path.getsize() retrieves the size of a file in bytes, and os.path.abspath() converts a relative path into an absolute one. These functions ensure your code works correctly across different operating systems without hardcoding path separators or assumptions about the file system structure.
+The faculty offers undergraduate programs in departments including Civil Engineering, Mechanical Engineering, Electrical Engineering, Computer Engineering, Chemical Engineering, Architecture, and Systems & Biomedical Engineering.
 
-The os module also provides tools for interacting with environment variables through os.environ, which behaves like a dictionary. You can retrieve the value of an environment variable using os.environ.get() which safely returns None if the variable does not exist instead of raising an error. Setting a new environment variable is done with os.environ['VAR_NAME'] = 'value', and removing one is done with os.environ.pop(). Environment variables are commonly used to store configuration values such as API keys, database URLs, and file paths, keeping sensitive information out of your source code.
+Undergraduate study takes 5 years to complete, ending with a Bachelor of Science in Engineering degree.
+
+The faculty also offers postgraduate programs including Master's and PhD degrees across all departments.
+
+Admission to the faculty is based on the Egyptian Thanaweyya Amma certificate, with high minimum scores required due to its competitive nature.
+
+The Computer Engineering department covers topics such as algorithms, computer architecture, operating systems, networks, and software engineering.
+
+The Electrical Engineering department focuses on power systems, electronics, communications, and control systems.
+
+The Civil Engineering department covers structural engineering, geotechnical engineering, hydraulics, and transportation.
+
+The faculty has several research centers including the Center for Renewable Energy and the Center for Environmental Engineering.
+
+Students are required to complete a graduation project in their final year, which is evaluated by a committee of professors.
+
+The faculty library contains thousands of engineering references, journals, and research papers available to students and staff.
+
+The academic year is divided into two semesters: the first runs from October to January, and the second from February to June.
+
+Cairo University Faculty of Engineering is accredited by the National Authority for Quality Assurance and Accreditation of Education (NAQAAE).
