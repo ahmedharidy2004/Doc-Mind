@@ -1,4 +1,4 @@
-# RAG Bridge System
+# ARAG
 
 ## Overview
 A simple Retrieval-Augmented Generation (RAG) pipeline using:
@@ -14,7 +14,7 @@ A simple Retrieval-Augmented Generation (RAG) pipeline using:
 pip install -r requirements.txt
 
 ## Run
-python bridge_rag.py
+python arag.py
 
 ## Example Query
 "What departments are available in Cairo University Faculty of Engineering?"
@@ -39,7 +39,7 @@ rag-bridge-system/
 │   ├── retriever.py        # similarity search
 │   └── rag_pipeline.py     # RetrievalQA chain
 │
-├── bridge_rag.py           # main script (entry point)
+├── arag.py           # main script (entry point)
 │
 ├── requirements.txt
 ├── README.md
