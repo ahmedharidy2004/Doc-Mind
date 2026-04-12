@@ -17,7 +17,7 @@ pip install -r requirements.txt
 python bridge_rag.py
 
 ## Example Query
-"How do I initialize the system?"
+"What departments are available in Cairo University Faculty of Engineering?"
 
 ## Output
 - Top 2 relevant chunks
@@ -30,7 +30,7 @@ rag-bridge-system/
 ├── data/
 │   └── mini_manual.txt
 │
-├── chroma_db/              # auto-generated (DO NOT edit manually)
+├── chroma_db/              
 │
 ├── src/
 │   ├── loader.py           # load + chunk text
