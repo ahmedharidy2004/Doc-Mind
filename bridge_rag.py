@@ -7,7 +7,7 @@ def main():
     create_vector_store(chunks)
 
     query = "What departments are available in Cairo University Faculty of Engineering?"
-    run_pipeline(query, model_name="llama3:8b", k=5)
+    run_pipeline(query, model_name="llama3", k=5)
 
 if __name__ == "__main__":
     main()
