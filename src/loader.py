@@ -6,8 +6,8 @@ def load_and_chunk(filename):
     documents = loader.load()
 
     text_splitter = CharacterTextSplitter(
-        chunk_size=200,
-        chunk_overlap=20,
+        chunk_size=500,
+        chunk_overlap=50,
     )
     chunks = text_splitter.split_documents(documents)
     
