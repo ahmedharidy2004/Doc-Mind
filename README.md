@@ -1,4 +1,4 @@
-# ARAG
+# InsightRAG
 
 ## Overview
 A simple Retrieval-Augmented Generation (RAG) pipeline using:
