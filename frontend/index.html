@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DocMind — Ask Your Documents</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Background grid -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">DocMind</span>
+    </div>
+    <p class="tagline">RAG-powered document intelligence</p>
+  </header>
+
+  <main class="main">
+
+    <!-- STEP 1: Upload -->
+    <section class="card upload-card" id="uploadSection">
+      <div class="step-label">01 / Upload</div>
+      <h2 class="card-title">Drop your document</h2>
+      <p class="card-sub">Supports .txt, .pdf, .docx files up to 10MB</p>
+
+      <div class="drop-zone" id="dropZone">
+        <input type="file" id="fileInput" accept=".txt,.pdf,.docx" hidden />
+        <div class="drop-inner" id="dropInner">
+          <div class="drop-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M20 8V28M20 8L13 15M20 8L27 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 30H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="drop-text">Drag & drop or <span class="drop-link" id="browseBtn">browse</span></p>
+          <p class="drop-hint" id="fileName">No file selected</p>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="uploadBtn" disabled>
+        <span class="btn-text">Index Document</span>
+        <span class="btn-icon">→</span>
+      </button>
+
+      <div class="status-bar" id="uploadStatus"></div>
+    </section>
+
+    <!-- STEP 2: Ask -->
+    <section class="card query-card" id="querySection">
+      <div class="step-label">02 / Query</div>
+      <h2 class="card-title">Ask anything</h2>
+      <p class="card-sub">Questions are answered using only your document's content</p>
+
+      <div class="input-row">
+        <textarea
+          id="queryInput"
+          class="query-input"
+          placeholder="e.g. When was the Faculty of Engineering established?"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <div class="query-controls">
+        <label class="k-label">
+          Top-K chunks
+          <input type="number" id="kInput" class="k-input" value="5" min="1" max="20" />
+        </label>
+        <button class="btn btn-accent" id="queryBtn">
+          <span class="btn-text">Ask</span>
+          <span class="btn-icon">⬡</span>
+        </button>
+      </div>
+
+      <div class="status-bar" id="queryStatus"></div>
+    </section>
+
+    <!-- STEP 3: Answer -->
+    <section class="card answer-card" id="answerSection">
+      <div class="step-label">03 / Answer</div>
+      <h2 class="card-title">Response</h2>
+
+      <div class="answer-box" id="answerBox">
+        <p class="answer-placeholder">Your answer will appear here after you ask a question.</p>
+      </div>
+
+      <div class="answer-meta" id="answerMeta"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>Built with LangChain · LLaMA 3 · ChromaDB · FastAPI</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
